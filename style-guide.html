@@ -1,0 +1,123 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="Internal visual style guide for the April Hill portfolio.">
+    <meta name="robots" content="noindex, nofollow">
+    <meta name="theme-color" content="#ffffff">
+    <link rel="icon" type="image/png" href="assets/images/logo.png">
+    <title>Style Guide | April Hill Portfolio</title>
+    <link rel="stylesheet" href="css/global.css">
+    <link rel="stylesheet" href="css/components.css">
+    <link rel="stylesheet" href="css/pages.css">
+    <script src="js/main.js" defer></script>
+  </head>
+  <body>
+    <a class="skip-link" href="#main-content">Skip to main content</a>
+    <header class="site-header">
+      <div class="container header-inner">
+        <a class="wordmark" href="index.html" aria-label="April Hill home"><span class="wordmark-logo" aria-hidden="true"><img src="assets/images/logo.png" width="500" height="500" alt=""></span></a>
+        <a class="text-link" href="index.html">Back to homepage</a>
+      </div>
+    </header>
+
+    <main id="main-content">
+      <header class="page-hero container">
+        <p class="eyebrow">Internal design reference</p>
+        <h1>Visual system preview</h1>
+        <p>Use this page to evaluate future Coolors palettes across realistic interface components. Color values are controlled in <code>css/tokens.css</code>.</p>
+      </header>
+
+      <section class="section section--surface" aria-labelledby="palette-title">
+        <div class="container">
+          <p class="eyebrow">Color tokens</p>
+          <h2 id="palette-title">Architectural brand foundation</h2>
+          <div class="style-guide-grid">
+            <article class="swatch"><div class="swatch-color swatch-color--graphite"></div><div class="swatch-label">Graphite · #1f2428</div></article>
+            <article class="swatch"><div class="swatch-color swatch-color--slate"></div><div class="swatch-label">Slate grey · #4a5568</div></article>
+            <article class="swatch"><div class="swatch-color swatch-color--vivid-steel"></div><div class="swatch-label">Vivid steel · #256b91</div></article>
+          </div>
+
+          <p class="eyebrow semantic-preview-heading">Restrained accents</p>
+          <div class="style-guide-grid">
+            <article class="swatch"><div class="swatch-color swatch-color--lavender"></div><div class="swatch-label">Digital lavender · #b497bd</div></article>
+            <article class="swatch"><div class="swatch-color swatch-color--pale-lavender"></div><div class="swatch-label">Pale lavender · #eee7f2</div></article>
+            <article class="swatch"><div class="swatch-color swatch-color--deep-lavender"></div><div class="swatch-label">Deep lavender · #6f5578</div></article>
+          </div>
+
+          <p class="eyebrow semantic-preview-heading">Surfaces and structure</p>
+          <div class="style-guide-grid">
+            <article class="swatch"><div class="swatch-color swatch-color--white"></div><div class="swatch-label">White · #ffffff</div></article>
+            <article class="swatch"><div class="swatch-color swatch-color--alternate"></div><div class="swatch-label">Alternate section · #f7f5f8</div></article>
+            <article class="swatch"><div class="swatch-color swatch-color--light-border"></div><div class="swatch-label">Light border · #d8dadd</div></article>
+          </div>
+
+          <p class="eyebrow semantic-preview-heading">Semantic preview</p>
+          <div class="style-guide-grid">
+            <article class="swatch"><div class="swatch-color swatch-color--canvas"></div><div class="swatch-label">Background · default</div></article>
+            <article class="swatch"><div class="swatch-color swatch-color--surface"></div><div class="swatch-label">Background · surface</div></article>
+            <article class="swatch"><div class="swatch-color swatch-color--ink"></div><div class="swatch-label">Text · primary</div></article>
+            <article class="swatch"><div class="swatch-color swatch-color--primary"></div><div class="swatch-label">Brand action</div></article>
+            <article class="swatch"><div class="swatch-color swatch-color--accent"></div><div class="swatch-label">Text accent · accessible</div></article>
+            <article class="swatch"><div class="swatch-color swatch-color--border"></div><div class="swatch-label">Border · subtle</div></article>
+          </div>
+        </div>
+      </section>
+
+      <section class="section" aria-labelledby="type-title">
+        <div class="container">
+          <p class="eyebrow">Typography</p>
+          <h2 id="type-title">Editorial confidence, technical clarity</h2>
+          <div class="component-preview">
+            <div>
+              <p class="type-sample-display">April Hill</p>
+              <p class="reading-width">Display type creates personality. The body type remains neutral and highly readable for project explanations, technical decisions, and migration stories.</p>
+            </div>
+            <div class="button-row">
+              <a class="button" href="#components">Primary action</a>
+              <a class="button button--secondary" href="#components">Secondary action</a>
+              <a class="text-link" href="#components">Text link</a>
+            </div>
+            <ul class="tag-list" aria-label="Sample technology tags">
+              <li class="tag">Angular</li>
+              <li class="tag">Django</li>
+              <li class="tag">AWS</li>
+              <li class="tag">Accessibility</li>
+            </ul>
+          </div>
+        </div>
+      </section>
+
+      <section class="section section--surface" id="components" aria-labelledby="components-title">
+        <div class="container">
+          <p class="eyebrow">Components</p>
+          <h2 id="components-title">Project and capability cards</h2>
+          <div class="project-grid">
+            <article class="project-card project-card--featured">
+              <p class="eyebrow">Featured case study</p>
+              <h3>Production migration under pressure</h3>
+              <p>A representative card for checking long-form contrast, hierarchy, links, and technology tags against the darkest brand color.</p>
+              <ul class="tag-list"><li class="tag">Node.js</li><li class="tag">AWS</li><li class="tag">Nginx</li></ul>
+              <a class="text-link" href="#palette-title">Review palette</a>
+            </article>
+            <article class="capability-card">
+              <span class="capability-number" aria-hidden="true">01</span>
+              <h3>Build</h3>
+              <p>Responsive interfaces and full-stack applications.</p>
+            </article>
+            <article class="capability-card">
+              <span class="capability-number" aria-hidden="true">02</span>
+              <h3>Operate</h3>
+              <p>Infrastructure, migrations, monitoring, and recovery.</p>
+            </article>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <div class="container footer-inner"><span>Internal style guide</span><span>Not intended for search indexing</span></div>
+    </footer>
+  </body>
+</html>

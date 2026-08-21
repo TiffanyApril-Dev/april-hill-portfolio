@@ -1,0 +1,209 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="Launch Commander MEAN-stack application and DREAM Payload Portal case study by full-stack developer April Hill.">
+    <meta name="theme-color" content="#ffffff">
+    <link rel="canonical" href="https://aprilhill.tech/launch-commander.html">
+    <link rel="icon" type="image/png" href="assets/images/logo.png">
+    <meta property="og:type" content="article">
+    <meta property="og:site_name" content="April Hill Portfolio">
+    <meta property="og:title" content="Launch Commander Case Study | April Hill">
+    <meta property="og:description" content="A MEAN-stack aerospace application, agent-assisted companion prototype, and resilient production migration story.">
+    <meta property="og:url" content="https://aprilhill.tech/launch-commander.html">
+    <meta property="og:image" content="https://aprilhill.tech/assets/images/launch-commander/home-demo.webp">
+    <meta property="og:image:alt" content="Launch Commander application dashboard">
+    <meta name="twitter:card" content="summary_large_image">
+    <title>Launch Commander Case Study | April Hill</title>
+    <link rel="stylesheet" href="css/global.css">
+    <link rel="stylesheet" href="css/components.css">
+    <link rel="stylesheet" href="css/pages.css">
+    <script src="js/main.js" defer></script>
+  </head>
+  <body>
+    <a class="skip-link" href="#main-content">Skip to main content</a>
+    <header class="site-header">
+      <div class="container header-inner">
+        <a class="wordmark" href="index.html" aria-label="April Hill home"><span class="wordmark-logo" aria-hidden="true"><img src="assets/images/logo.png" width="500" height="500" alt=""></span></a>
+        <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="primary-nav" aria-label="Open navigation menu" data-nav-toggle><span></span><span></span><span></span></button>
+        <nav class="primary-nav" id="primary-nav" aria-label="Primary navigation" data-primary-nav>
+          <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="work.html" aria-current="page">Work</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="index.html#contact">Contact</a></li>
+            <li><a href="https://github.com/TiffanyApril-Dev" target="_blank" rel="noreferrer">GitHub</a></li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+
+    <main id="main-content">
+      <header class="case-study-hero">
+        <div class="container case-study-hero-grid">
+          <div>
+            <p class="eyebrow">Flagship full-stack case study</p>
+            <h1>Launch Commander</h1>
+            <p class="case-study-lead">A production MEAN-stack aerospace application combining live launch data, authenticated predictions, scoring, analytics, leaderboards, and resilient cloud delivery.</p>
+            <ul class="tag-list" aria-label="Project technologies">
+              <li class="tag">Angular</li>
+              <li class="tag">Express</li>
+              <li class="tag">MongoDB</li>
+              <li class="tag">Node.js</li>
+              <li class="tag">Vercel</li>
+              <li class="tag">AWS Lightsail</li>
+            </ul>
+            <div class="button-row">
+              <a class="button" href="https://launchcommander.tech" target="_blank" rel="noreferrer">Open live application</a>
+              <a class="button button--secondary" href="work.html">All projects</a>
+            </div>
+          </div>
+          <aside class="case-study-summary" aria-label="Project summary">
+            <dl>
+              <div><dt>Role</dt><dd>Product designer, full-stack developer, and operator</dd></div>
+              <div><dt>Core experience</dt><dd>Predictions, scoring, analytics, and leaderboards</dd></div>
+              <div><dt>Companion prototype</dt><dd>DREAM student payload workflow</dd></div>
+              <div><dt>Production</dt><dd>Vercel frontend and AWS Lightsail API</dd></div>
+            </dl>
+          </aside>
+        </div>
+      </header>
+
+      <section class="section" aria-label="Project preview">
+        <div class="container">
+          <figure class="case-study-figure">
+            <img src="assets/images/launch-commander/home-demo.webp" width="1600" height="742" alt="Launch Commander dashboard showing user rank, prediction totals, and an upcoming launch">
+            <figcaption>The authenticated dashboard combines player progress with current launch information and a direct path into prediction-making.</figcaption>
+          </figure>
+        </div>
+      </section>
+
+      <section class="section section--surface" aria-labelledby="overview-title">
+        <div class="container case-study-section">
+          <h2 id="overview-title">Product overview</h2>
+          <div class="case-study-copy">
+            <p>Launch Commander turns real launch information into an interactive prediction experience. Users create accounts, review upcoming missions, submit outcome predictions, accumulate points, inspect performance analytics, and compare results on a global leaderboard.</p>
+            <p>I developed the application across the MEAN stack and remained responsible for it after launch. That ownership expanded the project from feature development into authentication, environment configuration, production diagnostics, cloud migration, and recovery.</p>
+          </div>
+        </div>
+      </section>
+
+      <section class="section" aria-labelledby="workflow-title">
+        <div class="container case-study-section">
+          <h2 id="workflow-title">Prediction and scoring workflow</h2>
+          <div>
+            <div class="case-study-copy">
+              <p>The prediction page brings mission data, filters, countdowns, a scoring guide, and personal prediction history into one workflow. The system records the user's choices, evaluates results after launch, and carries those outcomes into analytics and leaderboard rankings.</p>
+              <p>The interface makes a data-heavy process approachable by separating upcoming missions into clear cards and keeping scoring rules visible at the moment a decision is made.</p>
+            </div>
+            <div class="case-study-gallery">
+              <figure class="case-study-figure case-study-figure--wide">
+                <img src="assets/images/launch-commander/predictions.webp" width="1582" height="937" loading="lazy" decoding="async" alt="Launch Commander predictions page with launch filters, mission cards, user history, and scoring guide">
+                <figcaption>The corrected predictions interface combines live mission context, decision controls, history, and transparent scoring.</figcaption>
+              </figure>
+              <figure class="case-study-figure case-study-figure--wide">
+                <img src="assets/images/launch-commander/leaderboard.webp" width="1600" height="797" loading="lazy" decoding="async" alt="Launch Commander global leaderboard with ranked users, points, predictions, and accuracy">
+                <figcaption>Leaderboard filters and performance details turn individual predictions into a competitive application loop.</figcaption>
+              </figure>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="section section--surface" aria-labelledby="dream-title">
+        <div class="container case-study-section">
+          <h2 id="dream-title">DREAM Payload Portal</h2>
+          <div>
+            <div class="case-study-copy">
+              <p>The idea began while I was preparing for a job fair involving Firefly Aerospace. A TSTC Computer Programming Technology fireside chat with a member of Firefly's software leadership gave me additional perspective on the company's work, and the DREAM program especially captured my interest.</p>
+              <p>I independently designed a companion portal concept for student teams preparing DREAM payload entries. The prototype brings application intake, reviewer feedback, mission-readiness tracking, and reusable learning material into a single guided workspace.</p>
+              <p>DREAM also represents how I approach self-directed product work. When a mission or workflow interests me, I enjoy turning it into a tangible system without waiting for a formal assignment. That initiative lets me investigate unfamiliar workflows, make product decisions, and demonstrate what I could contribute to a team.</p>
+              <p>The portal currently runs as a front-end demonstration within Launch Commander. It does not save submissions to a production database, but its states and workflows are organized for a later persistence layer. It is an independent portfolio concept and not an official Firefly Aerospace product.</p>
+            </div>
+            <div class="case-study-gallery">
+              <figure class="case-study-figure case-study-figure--wide">
+                <img src="assets/images/launch-commander/dream-application.webp" width="1600" height="785" loading="lazy" decoding="async" alt="DREAM Payload Portal student application workflow with team profile and payload intake steps">
+                <figcaption>A staged payload intake form reduces a complex application into visible, manageable steps.</figcaption>
+              </figure>
+              <figure class="case-study-figure case-study-figure--wide">
+                <img src="assets/images/launch-commander/dream-review.webp" width="1600" height="788" loading="lazy" decoding="async" alt="DREAM Payload Portal review queue with submission readiness and reviewer feedback">
+                <figcaption>Review status connects each submission to feedback, required changes, and readiness.</figcaption>
+              </figure>
+              <figure class="case-study-figure case-study-figure--wide">
+                <img src="assets/images/launch-commander/dream-readiness.webp" width="1600" height="793" loading="lazy" decoding="async" alt="DREAM Payload Portal readiness dashboard with checklist progress and requirement guidance">
+                <figcaption>Readiness indicators and plain-language guidance help teams identify what needs attention.</figcaption>
+              </figure>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="section" aria-labelledby="agents-title">
+        <div class="container case-study-section">
+          <h2 id="agents-title">Agent-assisted development</h2>
+          <div>
+            <div class="case-study-copy">
+              <p>I used the DREAM prototype to deliberately practice working with coding agents. I designed the information architecture, user flows, visual direction, requirements, and demo data, then supplied my existing Launch Commander application shell as a reusable template.</p>
+              <p>I directed agents to implement scoped portions of the portal, evaluated the output against my design, and refined the result through review and iteration. Reusing the established shell reduced setup work and let me concentrate on translating a real program workflow into a coherent product experience.</p>
+            </div>
+            <div class="architecture-flow" aria-label="Agent-assisted development workflow">
+              <div class="architecture-node"><strong>Design and scope</strong><span>I defined users, workflows, content, states, and visual direction.</span></div>
+              <div class="architecture-node"><strong>Template and direction</strong><span>I supplied the Launch Commander shell and assigned bounded implementation tasks.</span></div>
+              <div class="architecture-node"><strong>Review and refinement</strong><span>I tested, evaluated, corrected, and integrated the resulting prototype.</span></div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="section section--surface" aria-labelledby="migration-title">
+        <div class="container case-study-section">
+          <h2 id="migration-title">Production migration</h2>
+          <div>
+            <div class="case-study-copy">
+              <p>When education hosting credits ended, I treated the repository as the portable source of truth and moved the backend without rewriting the application. Railway was replaced by Render, but authentication and runtime instability made that environment unsuitable for the live demo.</p>
+              <p>I prepared an AWS Lightsail replacement, restored environment-specific configuration, validated the API against the existing Vercel frontend, and switched production only after the new path worked. This kept the application publicly available through the provider transitions and turned a hosting problem into practical experience in recovery and platform independence.</p>
+            </div>
+            <ol class="migration-history" aria-label="Launch Commander hosting migration history">
+              <li><span class="migration-step">Stage 01</span><div><strong>Railway</strong><span>Original backend hosting until education credits ended.</span></div></li>
+              <li><span class="migration-step">Stage 02</span><div><strong>Render</strong><span>Migration target that exposed authentication and runtime reliability problems.</span></div></li>
+              <li><span class="migration-step">Stage 03</span><div><strong>AWS Lightsail</strong><span>Stable replacement deployed and validated before the production cutover.</span></div></li>
+            </ol>
+            <div class="architecture-flow" aria-label="Current Launch Commander production architecture">
+              <div class="architecture-node"><strong>GitHub</strong><span>Version-controlled source and deployment workflow.</span></div>
+              <div class="architecture-node"><strong>Vercel + Lightsail</strong><span>Angular frontend on Vercel; Node and Express API on AWS.</span></div>
+              <div class="architecture-node"><strong>MongoDB Atlas</strong><span>Managed application data with restricted production access.</span></div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="section" aria-labelledby="outcome-title">
+        <div class="container">
+          <div class="case-study-outcome">
+            <p class="eyebrow">Outcome</p>
+            <h2 id="outcome-title">One application demonstrating product development and operational ownership.</h2>
+            <p>Launch Commander shows more than a completed feature set. It demonstrates how I design an experience, work across a full JavaScript stack, integrate changing external data, use agents under deliberate human direction, protect application continuity, and adapt deployment architecture when real platform constraints appear.</p>
+          </div>
+        </div>
+      </section>
+
+      <section class="section">
+        <div class="container case-study-next">
+          <div>
+            <p class="eyebrow">Continue exploring</p>
+            <h2>See the rest of my selected work.</h2>
+          </div>
+          <div class="button-row">
+            <a class="button" href="work.html">View all projects</a>
+            <a class="button button--secondary" href="index.html#contact">Contact me</a>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <div class="container footer-inner"><span>&copy; <span data-current-year>2026</span> April Hill</span><span><a href="index.html#contact">Contact</a> &middot; <a href="about.html">About</a></span></div>
+    </footer>
+  </body>
+</html>

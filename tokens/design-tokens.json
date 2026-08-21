@@ -1,0 +1,68 @@
+{
+  "meta": {
+    "status": "active",
+    "note": "April Hill identity system: white and lavender-neutral surfaces, Vivid Steel interaction and logo color, Slate typography, and a restrained lavender accent family."
+  },
+  "color": {
+    "brand": {
+      "graphite": { "value": "#1f2428" },
+      "slateGrey": { "value": "#4a5568" },
+      "vividSteel": { "value": "#256b91" },
+      "vividSteelHover": { "value": "#1e5776" }
+    },
+    "accents": {
+      "digitalLavender": { "value": "#b497bd" },
+      "paleLavender": { "value": "#eee7f2" },
+      "deepLavender": { "value": "#6f5578" }
+    },
+    "neutrals": {
+      "white": { "value": "#ffffff" },
+      "alternate": { "value": "#f7f5f8" },
+      "border": { "value": "#d8dadd" }
+    }
+  },
+  "semantic": {
+    "bg": {
+      "default": { "value": "{color.neutrals.white}" },
+      "surface": { "value": "{color.neutrals.white}" },
+      "alternate": { "value": "{color.neutrals.alternate}" },
+      "soft": { "value": "{color.neutrals.alternate}" },
+      "portrait": { "value": "{color.accents.paleLavender}" },
+      "accentCallout": { "value": "{color.accents.paleLavender}" },
+      "caseStudyHighlight": { "value": "{color.neutrals.white}" }
+    },
+    "text": {
+      "primary": { "value": "{color.brand.graphite}" },
+      "secondary": { "value": "{color.brand.slateGrey}" },
+      "accent": { "value": "{color.accents.deepLavender}" }
+    },
+    "button": {
+      "primaryBg": { "value": "{color.brand.vividSteel}" },
+      "primaryHoverBg": { "value": "{color.brand.vividSteelHover}" },
+      "primaryText": { "value": "{color.neutrals.white}" },
+      "secondaryBg": { "value": "{color.accents.paleLavender}" },
+      "secondaryText": { "value": "{color.brand.graphite}" }
+    },
+    "border": {
+      "subtle": { "value": "{color.neutrals.border}" },
+      "highlight": { "value": "{color.accents.digitalLavender}" }
+    }
+  },
+  "accessibility": {
+    "verifiedPairs": {
+      "primaryButton": "#ffffff on #256b91 = 5.85:1",
+      "primaryButtonHover": "#ffffff on #1e5776 = 7.84:1",
+      "primaryText": "#1f2428 on #ffffff = 15.66:1",
+      "secondaryText": "#4a5568 on #ffffff = 7.53:1",
+      "deepLavenderText": "#6f5578 on #ffffff = 6.47:1",
+      "calloutText": "#1f2428 on #eee7f2 = 12.93:1",
+      "alternateSectionText": "#1f2428 on #f7f5f8 = 14.44:1"
+    },
+    "usageNotes": {
+      "digitalLavender": "Decorative accent for borders, icons, and markers; do not use for small text on a light background.",
+      "paleLavender": "Callout and selected tag background with Graphite text.",
+      "deepLavender": "Accessible lavender option for text when a non-interactive accent is needed.",
+      "portrait": "Pale Lavender frames the portrait without competing with Vivid Steel interactions."
+    }
+  }
+}

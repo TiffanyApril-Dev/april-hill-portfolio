@@ -1,0 +1,8 @@
+.DS_Store
+Thumbs.db
+*.log
+*-audit.png
+
+# Private, full-resolution source photography and temporary review exports
+source-images/
+.profile-review/

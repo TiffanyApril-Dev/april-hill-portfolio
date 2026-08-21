@@ -1,0 +1,164 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="Cosmos Custom Shirts Django commerce application case study by full-stack developer April Hill.">
+    <meta name="theme-color" content="#ffffff">
+    <link rel="canonical" href="https://aprilhill.tech/cosmos-custom-shirts.html">
+    <link rel="icon" type="image/png" href="assets/images/logo.png">
+    <meta property="og:type" content="article">
+    <meta property="og:site_name" content="April Hill Portfolio">
+    <meta property="og:title" content="Cosmos Custom Shirts Case Study | April Hill">
+    <meta property="og:description" content="A Django commerce demonstration with configurable products, session cart behavior, and AWS delivery.">
+    <meta property="og:url" content="https://aprilhill.tech/cosmos-custom-shirts.html">
+    <meta property="og:image" content="https://aprilhill.tech/assets/images/cosmos/cosmos-home.webp">
+    <meta property="og:image:alt" content="Cosmos Custom Shirts product catalog">
+    <meta name="twitter:card" content="summary_large_image">
+    <title>Cosmos Custom Shirts Case Study | April Hill</title>
+    <link rel="stylesheet" href="css/global.css">
+    <link rel="stylesheet" href="css/components.css">
+    <link rel="stylesheet" href="css/pages.css">
+    <script src="js/main.js" defer></script>
+  </head>
+  <body>
+    <a class="skip-link" href="#main-content">Skip to main content</a>
+    <header class="site-header">
+      <div class="container header-inner">
+        <a class="wordmark" href="index.html" aria-label="April Hill home"><span class="wordmark-logo" aria-hidden="true"><img src="assets/images/logo.png" width="500" height="500" alt=""></span></a>
+        <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="primary-nav" aria-label="Open navigation menu" data-nav-toggle><span></span><span></span><span></span></button>
+        <nav class="primary-nav" id="primary-nav" aria-label="Primary navigation" data-primary-nav>
+          <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="work.html" aria-current="page">Work</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="index.html#contact">Contact</a></li>
+            <li><a href="https://github.com/TiffanyApril-Dev" target="_blank" rel="noreferrer">GitHub</a></li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+
+    <main id="main-content">
+      <header class="case-study-hero">
+        <div class="container case-study-hero-grid">
+          <div>
+            <p class="eyebrow">Full-stack commerce case study</p>
+            <h1>Cosmos Custom Shirts</h1>
+            <p class="case-study-lead">A Django commerce demonstration that combines user accounts, configurable products, cart behavior, catalog administration, and production deployment on AWS.</p>
+            <ul class="tag-list" aria-label="Project technologies">
+              <li class="tag">Python</li>
+              <li class="tag">Django</li>
+              <li class="tag">AWS EC2</li>
+              <li class="tag">Nginx</li>
+            </ul>
+            <div class="button-row">
+              <a class="button" href="https://cosmos.orbittiff.dev" target="_blank" rel="noreferrer">Open live demo</a>
+              <a class="button button--secondary" href="work.html">All projects</a>
+            </div>
+          </div>
+          <aside class="case-study-summary" aria-label="Project summary">
+            <dl>
+              <div><dt>Role</dt><dd>Full-stack developer and deployer</dd></div>
+              <div><dt>Application</dt><dd>Configurable product catalog and demo cart</dd></div>
+              <div><dt>Accounts</dt><dd>Custom user model and email activation</dd></div>
+              <div><dt>Delivery</dt><dd>AWS EC2 behind Nginx</dd></div>
+            </dl>
+          </aside>
+        </div>
+      </header>
+
+      <section class="section" aria-label="Project preview">
+        <div class="container">
+          <figure class="case-study-figure">
+            <img src="assets/images/cosmos/cosmos-home-full.webp" width="1175" height="890" alt="Cosmos Custom Shirts catalog homepage with colorful shirt designs organized by category">
+            <figcaption>The catalog introduces the product range through a responsive, category-based storefront.</figcaption>
+          </figure>
+        </div>
+      </section>
+
+      <section class="section section--surface" aria-labelledby="overview-title">
+        <div class="container case-study-section">
+          <h2 id="overview-title">Project overview</h2>
+          <div class="case-study-copy">
+            <p>Cosmos Custom Shirts is a full-stack Django demonstration built to explore the systems behind a configurable online catalog. Visitors can browse designs, select product options, create an account, and move configured items through a demo shopping workflow.</p>
+            <p>The project joins application development with deployment ownership. I implemented the user and commerce flows, prepared the catalog for administrative management, and deployed the application to an AWS EC2 server behind Nginx.</p>
+          </div>
+        </div>
+      </section>
+
+      <section class="section" aria-labelledby="configuration-title">
+        <div class="container case-study-section">
+          <h2 id="configuration-title">Product configuration</h2>
+          <div>
+            <div class="case-study-copy">
+              <p>Each product page turns a catalog item into a configured selection. Customers choose a size, fabric, and shirt color before adding the result to the demo cart. Clear stock, price, and confirmation states keep the interaction understandable.</p>
+              <p>This workflow demonstrates handling related product choices through the interface while retaining the selected variant details for the next step of the shopping journey.</p>
+            </div>
+            <div class="case-study-gallery">
+              <figure class="case-study-figure case-study-figure--wide">
+                <img src="assets/images/cosmos/cosmos-product-configurator.webp" width="995" height="897" loading="lazy" decoding="async" alt="Cosmos product page with size, fabric, and shirt color configuration controls">
+                <figcaption>A configured product with size, fabric, and color selections plus an explicit cart confirmation.</figcaption>
+              </figure>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="section section--surface" aria-labelledby="cart-title">
+        <div class="container case-study-section">
+          <h2 id="cart-title">Cart state and editing</h2>
+          <div>
+            <div class="case-study-copy">
+              <p>The session-based cart retains the configuration for every item rather than treating products as generic entries. Customers can review each combination, change its selections, remove it, and see the updated subtotal.</p>
+              <p>A visible demonstration notice makes the project's scope clear: the experience exercises commerce behavior without collecting payment or representing a production store.</p>
+            </div>
+            <div class="case-study-gallery">
+              <figure class="case-study-figure case-study-figure--wide">
+                <img src="assets/images/cosmos/cosmos-cart-variants.webp" width="991" height="882" loading="lazy" decoding="async" alt="Cosmos demo cart containing three products with different sizes, fabrics, and colors">
+                <figcaption>The cart preserves independently configured variants and provides update and delete controls.</figcaption>
+              </figure>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="section" aria-labelledby="deployment-title">
+        <div class="container case-study-section">
+          <h2 id="deployment-title">Production-minded delivery</h2>
+          <div class="case-study-copy">
+            <p>The application runs on an AWS EC2 instance with Nginx handling web traffic. Hosting the demo myself extended the project beyond framework development into Linux server configuration, domain routing, TLS, and ongoing application availability.</p>
+            <p>The current address will move from the Orbit Tiff domain to <strong>cosmos.aprilhill.tech</strong> as part of the portfolio rebrand, without requiring the application itself to move to a different server.</p>
+          </div>
+        </div>
+      </section>
+
+      <section class="section section--surface" aria-labelledby="outcome-title">
+        <div class="container">
+          <div class="case-study-outcome">
+            <p class="eyebrow">Outcome</p>
+            <h2 id="outcome-title">A complete demonstration of application logic and deployment ownership.</h2>
+            <p>Cosmos shows the full path from user accounts and catalog data to configurable products, session state, administrative management, and cloud delivery. It demonstrates that I can build an application and also operate the infrastructure that keeps it accessible.</p>
+          </div>
+        </div>
+      </section>
+
+      <section class="section">
+        <div class="container case-study-next">
+          <div>
+            <p class="eyebrow">Continue exploring</p>
+            <h2>See the rest of my selected work.</h2>
+          </div>
+          <div class="button-row">
+            <a class="button" href="work.html">View all projects</a>
+            <a class="button button--secondary" href="index.html#contact">Contact me</a>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <div class="container footer-inner"><span>&copy; <span data-current-year>2026</span> April Hill</span><span><a href="index.html#contact">Contact</a> &middot; <a href="about.html">About</a></span></div>
+    </footer>
+  </body>
+</html>
