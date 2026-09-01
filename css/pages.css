@@ -64,19 +64,25 @@
 
 .proof-list {
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
+  grid-template-columns: repeat(3, minmax(0, 1fr));
   margin: 0;
   padding: 0;
   gap: var(--space-5);
+  justify-items: center;
+  align-items: center;
   list-style: none;
 }
 
 .proof-list li {
   display: flex;
+  width: fit-content;
+  max-width: 100%;
   gap: var(--space-3);
+  justify-content: center;
   align-items: center;
   font-size: var(--text-sm);
   font-weight: 700;
+  text-align: left;
 }
 
 .proof-list li::before {
