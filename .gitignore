@@ -6,3 +6,6 @@ Thumbs.db
 # Private, full-resolution source photography and temporary review exports
 source-images/
 .profile-review/
+
+# Private job-application drafts; never publish these with the portfolio
+.application-materials/

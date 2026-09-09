@@ -60,6 +60,7 @@ Keep the professional specialty or tagline as live HTML text rather than baking 
 - `work.html` — selected project index
 - `about.html` — personalized professional narrative
 - `launch-commander.html` — Launch Commander, DREAM Portal, and migration case study
+- `clock-end.html` — Arsenal companion, quota-aware sports data, and validation case study
 - `cosmos-custom-shirts.html` — Django commerce and AWS deployment case study
 - `echelon-timepieces.html` — Shopify, localization, and image-direction case study
 - `rusted-luxe.html` — archived WordPress and WooCommerce case study
@@ -100,7 +101,8 @@ Keep the professional specialty or tagline as live HTML text rather than baking 
 - [ ] Add a professional blog only after at least two substantive technical posts are ready
 - [ ] Create a dedicated 1200 × 630 social-sharing image and a mark-only favicon
 - [ ] Revisit the weather API behavior in Launch Commander
-- [ ] Add future sports and Space Commander projects only when each has a demonstrable milestone
+- [x] Add Clock End after its Vercel, Neon Postgres, and live-data milestones
+- [ ] Add Space Commander only when it has a demonstrable milestone
 
 ## Local preview
 

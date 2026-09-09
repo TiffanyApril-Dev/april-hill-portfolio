@@ -1,0 +1,195 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="Clock End live sports dashboard case study by full-stack developer April Hill.">
+    <meta name="theme-color" content="#ffffff">
+    <link rel="canonical" href="https://aprilhill.tech/clock-end.html">
+    <link rel="icon" type="image/png" href="assets/images/logo.png">
+    <meta property="og:type" content="article">
+    <meta property="og:site_name" content="April Hill Portfolio">
+    <meta property="og:title" content="Clock End Case Study | April Hill">
+    <meta property="og:description" content="An Arsenal-focused football companion built with Next.js, TypeScript, Prisma, Neon Postgres, and quota-aware sports data.">
+    <meta property="og:url" content="https://aprilhill.tech/clock-end.html">
+    <meta property="og:image" content="https://aprilhill.tech/assets/images/clock-end/dashboard.webp">
+    <meta property="og:image:alt" content="Clock End dashboard overview">
+    <meta name="twitter:card" content="summary_large_image">
+    <title>Clock End Case Study | April Hill</title>
+    <link rel="stylesheet" href="css/global.css">
+    <link rel="stylesheet" href="css/components.css">
+    <link rel="stylesheet" href="css/pages.css">
+    <script src="js/main.js" defer></script>
+  </head>
+  <body>
+    <a class="skip-link" href="#main-content">Skip to main content</a>
+    <header class="site-header">
+      <div class="container header-inner">
+        <a class="wordmark" href="index.html" aria-label="April Hill home"><span class="wordmark-logo" aria-hidden="true"><img src="assets/images/logo.png" width="500" height="500" alt=""></span></a>
+        <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="primary-nav" aria-label="Open navigation menu" data-nav-toggle><span></span><span></span><span></span></button>
+        <nav class="primary-nav" id="primary-nav" aria-label="Primary navigation" data-primary-nav>
+          <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="work.html" aria-current="page">Work</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="index.html#contact">Contact</a></li>
+            <li><a href="https://github.com/TiffanyApril-Dev" target="_blank" rel="noreferrer">GitHub</a></li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+
+    <main id="main-content">
+      <header class="case-study-hero">
+        <div class="container case-study-hero-grid">
+          <div>
+            <p class="eyebrow">Live sports dashboard case study</p>
+            <h1>Clock End</h1>
+            <p class="case-study-lead">An Arsenal-focused football companion that brings fixtures, results, league context, and a household prediction competition into one fast, readable experience.</p>
+            <ul class="tag-list" aria-label="Project technologies">
+              <li class="tag">Next.js</li>
+              <li class="tag">TypeScript</li>
+              <li class="tag">Prisma</li>
+              <li class="tag">Neon Postgres</li>
+              <li class="tag">Vercel</li>
+              <li class="tag">Highlightly API</li>
+            </ul>
+            <div class="button-row">
+              <a class="button" href="https://clock-end.vercel.app" target="_blank" rel="noreferrer">Open live application</a>
+              <a class="button button--secondary" href="https://github.com/TiffanyApril-Dev/clock-end" target="_blank" rel="noreferrer">View source</a>
+              <a class="button button--secondary" href="work.html">All projects</a>
+            </div>
+          </div>
+          <aside class="case-study-summary" aria-label="Project summary">
+            <dl>
+              <div><dt>Role</dt><dd>Full-stack developer and product-minded builder</dd></div>
+              <div><dt>Core experience</dt><dd>Fixtures, results, standings, and household predictions</dd></div>
+              <div><dt>Constraint</dt><dd>100 provider requests per day with a 20-request reserve</dd></div>
+              <div><dt>Production</dt><dd>Vercel application with managed Neon Postgres</dd></div>
+            </dl>
+          </aside>
+        </div>
+      </header>
+
+      <section class="section" aria-label="Project preview">
+        <div class="container">
+          <figure class="case-study-figure">
+            <img src="assets/images/clock-end/dashboard.webp" width="1440" height="1000" alt="Clock End Arsenal dashboard showing the next match and fixtures across competitions">
+            <figcaption>The matchday view puts Arsenal's next fixture first, then keeps every competition available through one compact set of filters.</figcaption>
+          </figure>
+        </div>
+      </section>
+
+      <section class="section section--surface" aria-labelledby="overview-title">
+        <div class="container case-study-section">
+          <h2 id="overview-title">Product overview</h2>
+          <div class="case-study-copy">
+            <p>Clock End began as a World Cup scorekeeper, but the first concept solved the wrong problem: it expected the user to enter goals instead of simply showing trustworthy scores. I used that mismatch as a product reset and rebuilt the project around how my husband and I actually follow Arsenal.</p>
+            <p>The new product follows one club across the Premier League, Champions League, and domestic cups, converts kickoff times for the viewer, and supports a friendly prediction table. That narrower audience made the requirements clearer and turned a generic sports exercise into a personal product we use.</p>
+          </div>
+        </div>
+      </section>
+
+      <section class="section" aria-labelledby="experience-title">
+        <div class="container case-study-section">
+          <h2 id="experience-title">User experience and data flow</h2>
+          <div>
+            <div class="case-study-copy">
+              <p>The Next.js client requests internal API routes rather than exposing provider credentials. Those routes normalize Highlightly data, persist fixtures and predictions through Prisma, and return UI-focused types. Neon Postgres keeps the household league, prediction history, cached fixtures, match events, and quota state durable across deployments.</p>
+              <p>The interface uses an Arsenal-inspired red and navy foundation with pale bruised-banana and gold accents. The main dashboard prioritizes the next match; the competitions view pairs Arsenal fixtures with the full Premier League table and highlights the club's row for fast scanning.</p>
+            </div>
+            <div class="case-study-gallery">
+              <figure class="case-study-figure case-study-figure--wide">
+                <img src="assets/images/clock-end/competitions.webp" width="1440" height="1000" loading="lazy" decoding="async" alt="Clock End competitions view with the Premier League table and Arsenal fixtures">
+                <figcaption>The competitions view places league position and Arsenal's schedule side by side, with Arsenal highlighted in the table.</figcaption>
+              </figure>
+              <figure class="case-study-figure case-study-figure--wide">
+                <img src="assets/images/clock-end/leaderboard.webp" width="1440" height="1000" loading="lazy" decoding="async" alt="Clock End household prediction leaderboard with two supporter positions">
+                <figcaption>The prediction league starts with two household profiles, while the relational model supports adding more members later.</figcaption>
+              </figure>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="section section--surface" aria-labelledby="reliability-title">
+        <div class="container case-study-section">
+          <h2 id="reliability-title">Reliable data within a hard request limit</h2>
+          <div>
+            <div class="case-study-copy">
+              <p>Highlightly allows 100 requests per day, so the browser never calls it directly. Each visit requests Clock End's internal endpoints, while 12-hour Vercel and database caches absorb normal traffic. A protected daily refresh warms fixtures and standings before visitors arrive. Live-score polling stays off except near an Arsenal kickoff, runs at five-minute intervals, and pauses whenever the tab is hidden.</p>
+              <p>Production logs uncovered a concurrency bug in my own quota guard: the first home and away fixture requests of a new UTC day could race to create the same quota row, causing one request to fail even though allowance remained. I replaced that read-then-update sequence with one atomic PostgreSQL reservation. I also added a stale-data fallback, so a temporary provider failure serves the last durable fixture snapshot instead of an empty dashboard.</p>
+            </div>
+            <div class="architecture-flow" role="list" aria-label="Quota-aware sports data flow">
+              <div class="architecture-node" role="listitem"><strong>Browser request</strong><span>The client calls server-owned endpoints; credentials never reach the browser.</span></div>
+              <div class="architecture-node" role="listitem"><strong>Cached snapshot</strong><span>Vercel and Neon serve stored data through normal visits and provider interruptions.</span></div>
+              <div class="architecture-node" role="listitem"><strong>Bounded refresh</strong><span>An atomic quota reservation protects the daily allowance before Highlightly is called.</span></div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="section" aria-labelledby="agents-title">
+        <div class="container case-study-section">
+          <h2 id="agents-title">AI-assisted build workflow</h2>
+          <div>
+            <div class="case-study-copy">
+              <p>I used Codex as an active engineering collaborator throughout the rebuild: recovering context after editor interruptions, inspecting the existing React code, comparing data providers, implementing bounded changes, and running verification after each phase.</p>
+              <p>I retained responsibility for the product decisions and review. That included correcting the original scorekeeper misunderstanding, defining the 100-request constraint, rejecting unnecessary live polling, choosing the deployment architecture, and checking the finished behavior against the fan workflow.</p>
+            </div>
+            <div class="architecture-flow" role="list" aria-label="AI-assisted development workflow">
+              <div class="architecture-node" role="listitem"><strong>Define constraints</strong><span>I translated a real fan routine, data budget, and deployment goal into bounded requirements.</span></div>
+              <div class="architecture-node" role="listitem"><strong>Build in phases</strong><span>Codex assisted with repository analysis, implementation, debugging, and documentation.</span></div>
+              <div class="architecture-node" role="listitem"><strong>Verify the result</strong><span>I reviewed the code, exercised the live product, and strengthened regression checks.</span></div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="section section--surface" aria-labelledby="qa-title">
+        <div class="container case-study-section">
+          <h2 id="qa-title">Release checks and validation</h2>
+          <div>
+            <div class="case-study-copy">
+              <p>I wrote a custom deployment evaluator for the application's critical contracts. It verifies database health, requires the fixture feed to contain Arsenal matches, validates Arsenal's row in a full league table, and checks that the household leaderboard returns scoreable members.</p>
+              <p>The checks run sequentially to avoid an API burst, skip the live-score endpoint, enforce a request timeout, and return a nonzero exit code when any contract fails. This is an application regression harness rather than an LLM-quality eval; keeping that distinction explicit makes the evidence more useful.</p>
+            </div>
+            <div class="case-study-gallery">
+              <figure class="case-study-figure case-study-figure--wide">
+                <img src="assets/images/clock-end/eval-passes.webp" width="968" height="317" loading="lazy" decoding="async" alt="PowerShell terminal showing all four Clock End production evaluation checks passing">
+                <figcaption>The evaluator ran against the deployed Vercel application and passed all four production contracts.</figcaption>
+              </figure>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="section" aria-labelledby="outcome-title">
+        <div class="container">
+          <div class="case-study-outcome">
+            <p class="eyebrow">Outcome</p>
+            <h2 id="outcome-title">A useful matchday dashboard that became part of a real fan routine.</h2>
+            <p>The live app now returns current Arsenal fixtures and results, shows the Premier League table with Arsenal highlighted, and persists a two-person prediction league that can grow to more members. It also demonstrates the less visible production work behind a small product: server-only secrets, quota telemetry, caching, migrations, managed Postgres, automated deployment, and contract-level release checks.</p>
+          </div>
+        </div>
+      </section>
+
+      <section class="section section--surface">
+        <div class="container case-study-next">
+          <div>
+            <p class="eyebrow">Continue exploring</p>
+            <h2>See the rest of my selected work.</h2>
+          </div>
+          <div class="button-row">
+            <a class="button" href="work.html">View all projects</a>
+            <a class="button button--secondary" href="index.html#contact">Contact me</a>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <div class="container footer-inner"><span>&copy; <span data-current-year>2026</span> April Hill</span><span><a href="index.html#contact">Contact</a> &middot; <a href="about.html">About</a></span></div>
+    </footer>
+  </body>
+</html>
