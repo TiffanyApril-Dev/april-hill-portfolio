@@ -66,8 +66,10 @@
   display: grid;
   grid-template-columns: repeat(3, minmax(0, 1fr));
   margin: 0;
+  margin-inline: auto;
   padding: 0;
   gap: clamp(var(--space-3), 2vw, var(--space-6));
+  justify-self: center;
   justify-items: center;
   align-items: center;
   list-style: none;
