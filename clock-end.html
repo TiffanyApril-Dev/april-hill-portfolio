@@ -45,7 +45,7 @@
           <div>
             <p class="eyebrow">Live sports dashboard case study</p>
             <h1>Clock End</h1>
-            <p class="case-study-lead">An Arsenal-focused football companion that brings fixtures, results, league context, and a household prediction competition into one fast, readable experience.</p>
+            <p class="case-study-lead">An Arsenal-focused football companion that brings fixtures, results, league context, and a private anonymous prediction record into one fast, readable experience.</p>
             <ul class="tag-list" aria-label="Project technologies">
               <li class="tag">Next.js</li>
               <li class="tag">TypeScript</li>
@@ -63,7 +63,7 @@
           <aside class="case-study-summary" aria-label="Project summary">
             <dl>
               <div><dt>Role</dt><dd>Full-stack developer and product-minded builder</dd></div>
-              <div><dt>Core experience</dt><dd>Fixtures, results, standings, and household predictions</dd></div>
+              <div><dt>Core experience</dt><dd>Fixtures, results, standings, and private supporter predictions</dd></div>
               <div><dt>Constraint</dt><dd>100 provider requests per day with a 20-request reserve</dd></div>
               <div><dt>Production</dt><dd>Vercel application with managed Neon Postgres</dd></div>
             </dl>
@@ -85,7 +85,7 @@
           <h2 id="overview-title">Product overview</h2>
           <div class="case-study-copy">
             <p>Clock End began as a World Cup scorekeeper, but the first concept solved the wrong problem: it expected the user to enter goals instead of simply showing trustworthy scores. I used that mismatch as a product reset and rebuilt the project around how my husband and I actually follow Arsenal.</p>
-            <p>The new product follows one club across the Premier League, Champions League, and domestic cups, converts kickoff times for the viewer, and supports a friendly prediction table. That narrower audience made the requirements clearer and turned a generic sports exercise into a personal product we use.</p>
+            <p>The new product follows one club across the Premier League, Champions League, and domestic cups, converts kickoff times for the viewer, and gives each visitor a private anonymous prediction record. That narrower audience made the requirements clearer and turned a generic sports exercise into a personal product we use.</p>
           </div>
         </div>
       </section>
@@ -95,17 +95,13 @@
           <h2 id="experience-title">User experience and data flow</h2>
           <div>
             <div class="case-study-copy">
-              <p>The Next.js client requests internal API routes rather than exposing provider credentials. Those routes normalize Highlightly data, persist fixtures and predictions through Prisma, and return UI-focused types. Neon Postgres keeps the household league, prediction history, cached fixtures, match events, and quota state durable across deployments.</p>
+              <p>The Next.js client requests internal API routes rather than exposing provider credentials. Those routes normalize Highlightly data, persist fixtures and anonymous predictions through Prisma, and return UI-focused types. Neon Postgres keeps supporter identities, prediction history, cached fixtures, match events, and quota state durable across deployments.</p>
               <p>The interface uses an Arsenal-inspired red and navy foundation with pale bruised-banana and gold accents. The main dashboard prioritizes the next match; the competitions view pairs Arsenal fixtures with the full Premier League table and highlights the club's row for fast scanning.</p>
             </div>
             <div class="case-study-gallery">
               <figure class="case-study-figure case-study-figure--wide">
                 <img src="assets/images/clock-end/competitions.webp" width="1440" height="1000" loading="lazy" decoding="async" alt="Clock End competitions view with the Premier League table and Arsenal fixtures">
                 <figcaption>The competitions view places league position and Arsenal's schedule side by side, with Arsenal highlighted in the table.</figcaption>
-              </figure>
-              <figure class="case-study-figure case-study-figure--wide">
-                <img src="assets/images/clock-end/leaderboard.webp" width="1440" height="1000" loading="lazy" decoding="async" alt="Clock End household prediction leaderboard with two supporter positions">
-                <figcaption>The prediction league starts with two household profiles, while the relational model supports adding more members later.</figcaption>
               </figure>
             </div>
           </div>
@@ -151,7 +147,7 @@
           <h2 id="qa-title">Release checks and validation</h2>
           <div>
             <div class="case-study-copy">
-              <p>I wrote a custom deployment evaluator for the application's critical contracts. It verifies database health, requires the fixture feed to contain Arsenal matches, validates Arsenal's row in a full league table, and checks that the household leaderboard returns scoreable members.</p>
+              <p>I wrote a custom deployment evaluator for the application's critical contracts. It verifies database health, requires the fixture feed to contain Arsenal matches, validates Arsenal's row in a full league table, and checks that the private matchday endpoint returns a valid supporter record.</p>
               <p>The checks run sequentially to avoid an API burst, skip the live-score endpoint, enforce a request timeout, and return a nonzero exit code when any contract fails. This is an application regression harness rather than an LLM-quality eval; keeping that distinction explicit makes the evidence more useful.</p>
             </div>
             <div class="case-study-gallery">
@@ -169,7 +165,7 @@
           <div class="case-study-outcome">
             <p class="eyebrow">Outcome</p>
             <h2 id="outcome-title">A useful matchday dashboard that became part of a real fan routine.</h2>
-            <p>The live app now returns current Arsenal fixtures and results, shows the Premier League table with Arsenal highlighted, and persists a two-person prediction league that can grow to more members. It also demonstrates the less visible production work behind a small product: server-only secrets, quota telemetry, caching, migrations, managed Postgres, automated deployment, and contract-level release checks.</p>
+            <p>The release candidate returns current Arsenal fixtures and results, shows the Premier League table with Arsenal highlighted, and persists anonymous supporter predictions privately per browser. It also demonstrates the less visible production work behind a small product: server-only secrets, rate limiting, quota telemetry, caching, migrations, managed Postgres, automated deployment, and contract-level release checks.</p>
           </div>
         </div>
       </section>
