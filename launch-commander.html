@@ -54,8 +54,8 @@
               <li class="tag">Vercel</li>
               <li class="tag">AWS Lightsail</li>
             </ul>
+            <p class="demo-access"><span>Availability:</span> Temporarily offline while rebuilding</p>
             <div class="button-row">
-              <a class="button" href="https://launchcommander.tech" target="_blank" rel="noreferrer">Open live application</a>
               <a class="button button--secondary" href="work.html">All projects</a>
             </div>
           </div>
@@ -119,7 +119,7 @@
               <p>The idea began while I was preparing for a job fair involving Firefly Aerospace. A TSTC Computer Programming Technology fireside chat with a member of Firefly's software leadership gave me additional perspective on the company's work, and the DREAM program especially captured my interest.</p>
               <p>I independently designed a companion portal concept for student teams preparing DREAM payload entries. The prototype brings application intake, reviewer feedback, mission-readiness tracking, and reusable learning material into a single guided workspace.</p>
               <p>DREAM also represents how I approach self-directed product work. When a mission or workflow interests me, I enjoy turning it into a tangible system without waiting for a formal assignment. That initiative lets me investigate unfamiliar workflows, make product decisions, and demonstrate what I could contribute to a team.</p>
-              <p>The portal currently runs as a front-end demonstration within Launch Commander. It does not save submissions to a production database, but its states and workflows are organized for a later persistence layer. It is an independent portfolio concept and not an official Firefly Aerospace product.</p>
+              <p>The portal was implemented as a front-end demonstration within Launch Commander. It did not save submissions to a production database, but its states and workflows were organized for a later persistence layer. It is an independent portfolio concept and not an official Firefly Aerospace product.</p>
             </div>
             <div class="case-study-gallery">
               <figure class="case-study-figure case-study-figure--wide">
@@ -162,14 +162,14 @@
           <div>
             <div class="case-study-copy">
               <p>When education hosting credits ended, I treated the repository as the portable source of truth and moved the backend without rewriting the application. Railway was replaced by Render, but authentication and runtime instability made that environment unsuitable for the live demo.</p>
-              <p>I prepared an AWS Lightsail replacement, restored environment-specific configuration, validated the API against the existing Vercel frontend, and switched production only after the new path worked. This kept the application publicly available through the provider transitions and turned a hosting problem into practical experience in recovery and platform independence.</p>
+              <p>I prepared an AWS Lightsail replacement, restored environment-specific configuration, validated the API against the existing Vercel frontend, and switched production only after the new path worked. This restored public access through the provider transitions and turned a hosting problem into practical experience in recovery and platform independence.</p>
             </div>
             <ol class="migration-history" aria-label="Launch Commander hosting migration history">
               <li><span class="migration-step">Stage 01</span><div><strong>Railway</strong><span>Original backend hosting until education credits ended.</span></div></li>
               <li><span class="migration-step">Stage 02</span><div><strong>Render</strong><span>Migration target that exposed authentication and runtime reliability problems.</span></div></li>
               <li><span class="migration-step">Stage 03</span><div><strong>AWS Lightsail</strong><span>Stable replacement deployed and validated before the production cutover.</span></div></li>
             </ol>
-            <div class="architecture-flow" aria-label="Current Launch Commander production architecture">
+            <div class="architecture-flow" aria-label="Launch Commander production architecture">
               <div class="architecture-node"><strong>GitHub</strong><span>Version-controlled source and deployment workflow.</span></div>
               <div class="architecture-node"><strong>Vercel + Lightsail</strong><span>Angular frontend on Vercel; Node and Express API on AWS.</span></div>
               <div class="architecture-node"><strong>MongoDB Atlas</strong><span>Managed application data with restricted production access.</span></div>
